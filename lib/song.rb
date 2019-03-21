@@ -21,7 +21,7 @@ attr_accessor :name, :artist, :genre
     @@genre_count= {}
     @@genre_count.each do |genre| 
       if genre_count[genre] binding.pry
-      end
+      
     end
   end 
   
