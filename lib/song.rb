@@ -19,14 +19,14 @@ attr_accessor :name, :artist, :genre
   
   def self.genre_count 
     @@genre_count= {}
-    @@genre_count.map do |genre| 
+    @@genre_count.each do |genre| 
       if @@genre_count [genre]
          @@genre_count[genre] +=1
         else 
           @@genre_count[genre]=1
       end 
     end
-    @@genre_count
+   return @@genre_count
   end 
   
   def self.artist_count
